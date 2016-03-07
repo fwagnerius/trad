@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    html{
+        background: #000;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        background: #000;
+    }
+
+    .ball {
+        width: 100%;
+    }
+
+    .gang-container{
+        position: absolute;
+        bottom: 0;
+        left:0;
+    }
+
+    .gang-container__logo--wrapper{
+        background: #000;
+        position: relative;
+        z-index: 1;
+    }
+
+
+
+    .gang-container__logo--wrapper img{
+        magin:0 auto;
+        display: block;
+        width: 80%;
+        position: relative;
+        z-index: 3;
+    }
+
+    .gang-container__logo--wrapper .gang-container__logo{
+        display: block;
+        margin:0 auto;
+        width: 80%;
+    }
+
+    .gang-container__member{
+        display: inline-block;
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .gang-container__member--frank:after{
+        content: "";
+        background: #000;
+        display: inline-block;
+        height: 24%;
+        width: 100%;
+        position: absolute;
+        bottom: -7px;
+    }
+
+    .gang-container__member--nick:after{
+        content: "";
+        background: #000;
+        display: inline-block;
+        height: 24%;
+        width: 100%;
+        position: absolute;
+        bottom: -26px;
+    }
+
+
+
+    .gang-container__member img{
+        width: 100%;
+        position: relative;
+        z-index: 3;
+    }
+
+
+
+
+
+    /*.gang-container__member:after{*/
+        /*content: "";*/
+        /*height: 50%;*/
+        /*width: 100%;*/
+        /*bottom: -85%;*/
+        /*position: absolute;*/
+        /*background: #000;*/
+        /*display: inline-block;*/
+        /*left: 0;*/
+    /*}*/
+
+
+</style>
+<body>
+<video class="ball" autoplay loop muted>
+    <source src="/video/rollingball.mp4" type="video/mp4">
+</video>
+<section class="gang-container">
+    <figure class="gang-container__member gang-container__member--frank">
+    <img class="gang-container__frank" src="/img/frank.png">
+    </figure>
+    <figure class="gang-container__member gang-container__member--nick">
+        <img class="gang-container__nick" src="/img/nick.png">
+    </figure>
+    <!--<section class="gang-container__logo&#45;&#45;wrapper">-->
+        <!--<img class="gang-container__logo" src="/img/logo.png">-->
+    <!--</section>-->
+</section>
+</body>
+</html>
