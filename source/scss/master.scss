@@ -1,12 +1,12 @@
 html {
-  background: #000;
+  background: #13161b;
 }
 
 body {
   margin: 0;
   padding: 0;
   position: relative;
-  background: #000;
+  background: #13161b;
 }
 
 .ball {
@@ -17,20 +17,19 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  figure {
+  width: 100%;
+  margin:0;
+  figure{
     margin:0;
   }
 
   &__nickandfrank {
     width: 100%;
+    position: relative;
+    z-index: 3;
   }
-  &__logo--container{
-    position: absolute;
-    bottom:-30%;
-  }
-  &__logo{
-    display: block;
-    margin:0 auto;
-    width: 80%;
-  }
+}
+
+@-webkit-keyframes fadeIt {
+  100% { opacity: 0.6; }
 }
